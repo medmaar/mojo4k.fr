@@ -273,7 +273,11 @@ p { font-size: clamp(17px, 2vw, 21px); line-height: 1.48; color: var(--a-text-se
 <nav id="ap-header">
     <div class="nav-inner">
         <a href="/" class="nav-logo">
-            <img src="https://iptvfrancestore.com/wp-content/uploads/2026/02/iptv-smarterss-5-e1770837529231.png" alt="IPTV France Store">
+            <svg width="140" height="44" viewBox="0 0 140 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="44" rx="10" fill="#1D1D1F"/>
+  <text x="70" y="16" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif" font-size="10" font-weight="700" fill="#0071E3" text-anchor="middle" letter-spacing="3">PREMIUM</text>
+  <text x="70" y="36" font-family="-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">MOJO 4K</text>
+</svg>
         </a>
         <div class="nav-menu">
             <div class="nav-menu-desktop">
@@ -473,78 +477,165 @@ p { font-size: clamp(17px, 2vw, 21px); line-height: 1.48; color: var(--a-text-se
     <!-- PRICING -->
     <section id="pricing" class="ap-section" style="background: rgba(255,255,255,0.7);">
         <div class="ap-container reveal">
-            <div class="text-center" style="margin-bottom: 72px;">
-                <h2>Nos offres d'abonnement IPTV France</h2>
-                <p>Pas de frais cachés. Prix en Euros.</p>
+            <div class="text-center" style="margin-bottom: 48px;">
+                <h2>Nos offres d'abonnement MOJO 4K</h2>
+                <p>Choisissez le nombre d'appareils et votre durée. Prix en Euros, sans frais cachés.</p>
             </div>
-            <div class="ap-grid grid-3">
-                <div class="ap-card price-card stagger-item">
+
+            <!-- DEVICE SELECTOR -->
+            <div style="margin-bottom: 40px;">
+                <p style="font-size:14px; color:#86868B; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:16px;">Nombre d'appareils</p>
+                <div id="device-tabs" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+                    <button onclick="selectDevice(1)" class="device-tab active" data-dev="1">1 Appareil</button>
+                    <button onclick="selectDevice(2)" class="device-tab" data-dev="2">2 Appareils</button>
+                    <button onclick="selectDevice(3)" class="device-tab" data-dev="3">3 Appareils</button>
+                    <button onclick="selectDevice(4)" class="device-tab" data-dev="4">4 Appareils</button>
+                    <button onclick="selectDevice(5)" class="device-tab" data-dev="5">5 Appareils</button>
+                    <button onclick="selectDevice(6)" class="device-tab" data-dev="6">6 Appareils</button>
+                    <button onclick="selectDevice(7)" class="device-tab" data-dev="7">7 Appareils</button>
+                    <button onclick="selectDevice(8)" class="device-tab" data-dev="8">8 Appareils</button>
+                    <button onclick="selectDevice(9)" class="device-tab" data-dev="9">9 Appareils</button>
+                    <button onclick="selectDevice(10)" class="device-tab" data-dev="10">10 Appareils</button>
+                </div>
+            </div>
+
+            <!-- PRICING GRID -->
+            <div class="ap-grid grid-4" id="pricing-grid">
+
+                <!-- 1 MONTH -->
+                <div class="ap-card price-card stagger-item" id="card-1m">
                     <div class="price-eyebrow">Découverte</div>
-                    <h3 class="price-title">3 Mois</h3>
-                    <div class="price-amount">19.99€</div>
-                    <span class="price-period">Idéal pour démarrer</span>
+                    <h3 class="price-title">1 Mois</h3>
+                    <div class="price-amount" id="price-1m">9€</div>
+                    <span class="price-period">Idéal pour tester</span>
                     <div class="buy-btn-container">
-                        <a href="https://mixtele.com/step/store-checkout-3-mois/" class="ap-btn btn-secondary" style="width: 100%;">Acheter</a>
+                        <a id="btn-1m" href="order.html?devices=1&duration=1" class="ap-btn btn-secondary" style="width:100%;">Acheter</a>
                         <p style="font-size:10px; color:#86868B; margin-top:10px; text-align:center;">Garantie satisfait ou remboursé</p>
                     </div>
                     <ul class="feature-list">
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span id="dev-label-1m">1 Appareil</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>4K, UHD, FHD, HD, SD</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Large sélection de chaînes TV et sport</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Catalogue films et séries selon disponibilité</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Serveurs stables et optimisés</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Activation rapide (≈ 5 min)</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Garantie selon conditions de remboursement</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
                     </ul>
                 </div>
-                <div class="ap-card price-card stagger-item">
+
+                <!-- 3 MONTHS -->
+                <div class="ap-card price-card stagger-item" id="card-3m">
                     <div class="price-eyebrow">Standard</div>
-                    <h3 class="price-title">6 Mois</h3>
-                    <div class="price-amount">29.99€</div>
+                    <h3 class="price-title">3 Mois</h3>
+                    <div class="price-amount" id="price-3m">29€</div>
                     <span class="price-period">Bon compromis</span>
                     <div class="buy-btn-container">
-                        <a href="https://mixtele.com/step/store-checkout-6-mois/" class="ap-btn btn-secondary" style="width: 100%;">Acheter</a>
+                        <a id="btn-3m" href="order.html?devices=1&duration=3" class="ap-btn btn-secondary" style="width:100%;">Acheter</a>
                         <p style="font-size:10px; color:#86868B; margin-top:10px; text-align:center;">Garantie satisfait ou remboursé</p>
                     </div>
                     <ul class="feature-list">
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span id="dev-label-3m">1 Appareil</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>4K, UHD, FHD, HD, SD</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Large sélection de chaînes TV et sport</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Catalogue films et séries selon disponibilité</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Serveurs stables et optimisés</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Activation rapide (≈ 5 min)</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Garantie selon conditions de remboursement</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
                     </ul>
                 </div>
-                <div class="ap-card price-card recommended stagger-item">
+
+                <!-- 6 MONTHS -->
+                <div class="ap-card price-card stagger-item" id="card-6m">
+                    <div class="price-eyebrow">Populaire</div>
+                    <h3 class="price-title">6 Mois</h3>
+                    <div class="price-amount" id="price-6m">39€</div>
+                    <span class="price-period">Meilleur rapport qualité/prix</span>
+                    <div class="buy-btn-container">
+                        <a id="btn-6m" href="order.html?devices=1&duration=6" class="ap-btn btn-secondary" style="width:100%;">Acheter</a>
+                        <p style="font-size:10px; color:#86868B; margin-top:10px; text-align:center;">Garantie satisfait ou remboursé</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span id="dev-label-6m">1 Appareil</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>4K, UHD, FHD, HD, SD</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Large sélection de chaînes TV et sport</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Activation rapide (≈ 5 min)</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
+                    </ul>
+                </div>
+
+                <!-- 12 MONTHS - RECOMMENDED -->
+                <div class="ap-card price-card recommended stagger-item" id="card-12m">
                     <span class="rec-badge">MEILLEURE VENTE</span>
                     <div class="price-eyebrow">Premium</div>
                     <h3 class="price-title">12 Mois</h3>
-                    <div class="price-amount">39.99€</div>
+                    <div class="price-amount" id="price-12m">49€</div>
                     <span class="price-period">Le plus économique</span>
                     <div class="buy-btn-container">
-                        <a href="https://mixtele.com/step/store-checkout-12-mois/" class="ap-btn btn-primary" style="width: 100%;">Acheter</a>
+                        <a id="btn-12m" href="order.html?devices=1&duration=12" class="ap-btn btn-primary" style="width:100%;">Acheter</a>
                         <p style="font-size:10px; color:#A1A1A6; margin-top:10px; text-align:center;">Garantie satisfait ou remboursé</p>
                     </div>
                     <ul class="feature-list">
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span id="dev-label-12m">1 Appareil</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>4K, UHD, FHD, HD, SD</span></li>
                         <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Large sélection de chaînes TV et sport</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Catalogue films et séries selon disponibilité</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Serveurs stables et optimisés</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Smart TV, MAG, iOS, Android et autres</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Configuration optimisée</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Activation rapide (≈ 5 min)</span></li>
-                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Garantie selon conditions de remboursement</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Activation rapide (≈ 5 min)</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Configuration optimisée incluse</span></li>
+                        <li><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#0071E3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Support 7j/7 prioritaire</span></li>
                     </ul>
                 </div>
+
             </div>
+
             <div style="text-align: center; margin-top: 32px;">
-                <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Je+veux+tester+24h" style="font-size: 14px; color: #0071E3; text-decoration: none; font-weight: 500; border-bottom: 1px solid rgba(0,113,227,0.3);">Besoin de tester ? Commandez un Pass 24h à 2.99€</a>
+                <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Je+veux+tester+24h" style="font-size: 14px; color: #0071E3; text-decoration: none; font-weight: 500; border-bottom: 1px solid rgba(0,113,227,0.3);">Besoin de tester ? Contactez-nous sur WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- REVIEWS -->
+    <!-- PRICING DEVICE+DURATION SCRIPT -->
+    <style>
+    .device-tab {
+        padding: 10px 18px; border-radius: 99px; border: 1px solid rgba(0,0,0,0.12);
+        background: #fff; color: #1D1D1F; font-size: 13px; font-weight: 500;
+        cursor: pointer; transition: all 0.2s ease; font-family: inherit;
+    }
+    .device-tab:hover { border-color: #0071E3; color: #0071E3; }
+    .device-tab.active { background: #1D1D1F; color: #fff; border-color: #1D1D1F; }
+    #pricing-grid { grid-template-columns: repeat(4,1fr); }
+    @media(max-width:1024px){ #pricing-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:600px){ #pricing-grid { grid-template-columns: 1fr; } }
+    </style>
+    <script>
+    var PRICES = {
+        1:  {1:9,   3:29,  6:39,  12:49},
+        2:  {1:18,  3:50,  6:69,  12:89},
+        3:  {1:27,  3:75,  6:105, 12:135},
+        4:  {1:36,  3:99,  6:140, 12:180},
+        5:  {1:45,  3:120, 6:175, 12:225},
+        6:  {1:54,  3:144, 6:210, 12:270},
+        7:  {1:63,  3:168, 6:245, 12:315},
+        8:  {1:72,  3:192, 6:280, 12:360},
+        9:  {1:81,  3:216, 6:315, 12:405},
+        10: {1:90,  3:240, 6:350, 12:450}
+    };
+    var currentDevices = 1;
+    function selectDevice(n) {
+        currentDevices = n;
+        document.querySelectorAll('.device-tab').forEach(function(t){ t.classList.remove('active'); });
+        document.querySelector('.device-tab[data-dev="' + n + '"]').classList.add('active');
+        var p = PRICES[n];
+        var label = n === 1 ? '1 Appareil' : n + ' Appareils';
+        document.getElementById('price-1m').textContent  = p[1] + '€';
+        document.getElementById('price-3m').textContent  = p[3] + '€';
+        document.getElementById('price-6m').textContent  = p[6] + '€';
+        document.getElementById('price-12m').textContent = p[12] + '€';
+        ['1m','3m','6m','12m'].forEach(function(d){
+            document.getElementById('dev-label-' + d).textContent = label;
+        });
+        var dur = {'1m':1, '3m':3, '6m':6, '12m':12};
+        Object.keys(dur).forEach(function(d){
+            document.getElementById('btn-' + d).href = 'order.html?devices=' + n + '&duration=' + dur[d];
+        });
+    }
+    </script>
+
+        <!-- REVIEWS -->
     <section class="reviews-section reveal">
         <div class="ap-container" style="margin-bottom: 40px; text-align: center;">
             <h3 style="margin-bottom: 10px;">Ils nous font confiance</h3>
@@ -575,17 +666,17 @@ p { font-size: clamp(17px, 2vw, 21px); line-height: 1.48; color: var(--a-text-se
             <h3 style="margin-left: 20px;">Derniers Ajouts 4K</h3>
         </div>
         <div class="movie-marquee">
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg" alt="Godzilla x Kong" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool 3" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg" alt="Godzilla x Kong" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool 3" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
             <!-- Duplicate set -->
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg" alt="Godzilla x Kong" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool 3" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
-            <a href="https://api.whatsapp.com/send/?phone=447878494212&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg" alt="Godzilla x Kong" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool 3" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
+            <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+Smarters+Pro" class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster"><div class="movie-overlay"><div class="whatsapp-overlay-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.21c-1.5 0-2.97-.39-4.26-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.14 8.14 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.22 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.07-.11-.23-.18-.48-.3z"/></svg>Commander</div></div></a>
         </div>
     </section>
 
@@ -629,7 +720,7 @@ p { font-size: clamp(17px, 2vw, 21px); line-height: 1.48; color: var(--a-text-se
                     <p style="color: #86868B; line-height: 1.5;">Nos experts sont disponibles pour vous conseiller instantanément.</p>
                 </div>
                 <div class="whatsapp-action">
-                    <a href="https://api.whatsapp.com/send/?phone=33756755869&text=Salut+IPTV+France%21+J%27ai+besoin+de+plus+d%27informations&type=phone_number&app_absent=0" class="ap-btn btn-whatsapp" style="width: 240px; height: 52px; font-size: 16px;">Discuter sur WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send/?phone=17828026280&text=Salut+IPTV+France%21+J%27ai+besoin+de+plus+d%27informations&type=phone_number&app_absent=0" class="ap-btn btn-whatsapp" style="width: 240px; height: 52px; font-size: 16px;">Discuter sur WhatsApp</a>
                 </div>
             </div>
         </div>
