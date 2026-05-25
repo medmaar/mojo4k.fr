@@ -54,4 +54,34 @@
   <url><loc>https://mojo4k.fr/iptv-strasbourg.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://mojo4k.fr/iptv-toulon.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://mojo4k.fr/iptv-toulouse.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://mojo4k.fr/tarifs.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mojo4k.fr/avantages.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mojo4k.fr/appareils.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mojo4k.fr/avis.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mojo4k.fr/aide.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
