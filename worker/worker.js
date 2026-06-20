@@ -102,6 +102,21 @@ function ctaButton(text, url) {
   </table>`;
 }
 
+function replyYesBox() {
+  return `
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#f8f8f8;border-left:4px solid ${ACCENT};border-radius:6px;margin-bottom:22px;">
+    <tr><td style="padding:20px 24px;">
+      <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#1D1D1F;font-weight:bold;">
+        📩 Le moyen le plus rapide ?
+      </p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#555555;">
+        Répondez simplement <strong>« OUI »</strong> à cet email — on réactive votre accès en quelques minutes, sans formulaire, sans complications.
+      </p>
+    </td></tr>
+  </table>`;
+}
+
 function welcomeEmail(name, username, password, m3uUrl) {
   const prenom = name && name !== "Non renseigné" ? name.split(" ")[0] : "";
   const greeting = prenom ? `Bonjour ${prenom},` : "Bonjour,";
@@ -142,8 +157,12 @@ function reminderEmail(name, username, password, m3uUrl) {
     </p>
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Vos identifiants actifs :</p>
     ${credBox(username, password, m3uUrl)}
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Gardez le même accès. Gardez la même qualité. Rendez-le simplement permanent. 👇
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Gardez le même accès. Gardez la même qualité. Rendez-le simplement permanent.
+    </p>
+    ${replyYesBox()}
+    <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Vous préférez comparer nos offres avant de vous décider ?
     </p>
     ${ctaButton("Voir nos offres →", SITE_URL + "/tarifs.html")}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
@@ -168,8 +187,12 @@ function followupEmail(name) {
     <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Tout ça, à un clic de distance.
     </p>
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Choisissez l'offre qui vous convient et c'est reparti — même qualité, zéro interruption, dès maintenant. 👇
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Voici comment reprendre — même qualité, zéro interruption :
+    </p>
+    ${replyYesBox()}
+    <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Vous préférez choisir vous-même votre offre ?
     </p>
     ${ctaButton("Choisir mon abonnement →", SITE_URL + "/tarifs.html")}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
@@ -315,3 +338,4 @@ export default {
   async fetch(request, env) { return handleFetch(request, env); },
   async scheduled(event, env, ctx) { ctx.waitUntil(handleScheduled(env)); },
 };
+
