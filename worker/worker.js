@@ -1,5 +1,5 @@
 /**
- * MOJO4K.FR — Essai Gratuit Worker
+ * MOJO4K.FR — Essai Gratuit Worker v1
  * Langue : Français · Panel: France
  */
 
