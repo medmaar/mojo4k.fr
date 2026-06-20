@@ -155,8 +155,6 @@ function reminderEmail(name, username, password, m3uUrl) {
     <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       <strong>Ne laissez pas ça s'arrêter ici.</strong>
     </p>
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Vos identifiants actifs :</p>
-    ${credBox(username, password, m3uUrl)}
     <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Gardez le même accès. Gardez la même qualité. Rendez-le simplement permanent.
     </p>
@@ -165,6 +163,8 @@ function reminderEmail(name, username, password, m3uUrl) {
       Vous préférez comparer nos offres avant de vous décider ?
     </p>
     ${ctaButton("Voir nos offres →", SITE_URL + "/tarifs.html")}
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Vos identifiants actifs :</p>
+    ${credBox(username, password, m3uUrl)}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Des questions ? Répondez à cet email ou contactez-nous sur WhatsApp au
       <a href="https://wa.me/${WA_NUMBER}" style="color:${ACCENT};text-decoration:none;font-weight:bold;">+1 782-802-6280</a> — on est toujours là.
