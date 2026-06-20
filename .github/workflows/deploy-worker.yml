@@ -10,8 +10,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -39,17 +37,16 @@ jobs:
             "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/${WORKER_NAME}" \
             -H "Authorization: Bearer ${CF_TOKEN}" \
             -F "metadata=${METADATA};type=application/json" \
-            -F "worker.js=@worker/worker.js;type=application/javascript+module" \
-            -o /tmp/deploy_result.json -w "HTTPSTATUS:%{http_code}\n"
-          cat /tmp/deploy_result.json
-        continue-on-error: true
+            -F "worker.js=@worker/worker.js;type=application/javascript+module"
 
-      - name: Commit result
+      - name: Set Cron Trigger
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+          WORKER_NAME: iptv-trial-mojo4kfr
         run: |
-          mkdir -p .debug
-          cp /tmp/deploy_result.json .debug/deploy_result.json
-          git config user.name bot
-          git config user.email bot@example.com
-          git add .debug/deploy_result.json
-          git commit -m "debug: capture result" || true
-          git push || true
+          curl -s -X PUT \
+            "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/${WORKER_NAME}/schedules" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '[{"cron": "0 * * * *"}]'
