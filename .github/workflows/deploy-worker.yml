@@ -10,14 +10,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: List KV namespaces
-        env:
-          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
-        run: 'curl -s "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/storage/kv/namespaces" -H "Authorization: Bearer ${CF_TOKEN}" > /tmp/kv_list.json && cat /tmp/kv_list.json'
-      - name: Commit KV list
-        run: 'mkdir -p .debug && cp /tmp/kv_list.json .debug/kv_list.json && git config user.name bot && git config user.email bot@example.com && git add .debug/kv_list.json && git commit -m kv-list && git push'
+      - name: Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          workingDirectory: worker
