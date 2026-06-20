@@ -30,8 +30,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH5DE9BXNM"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BH5DE9BXNM');</script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init("TTNQ5ENPZa4-EzptV");</script>
+
 <style>
 *{box-sizing:border-box;-webkit-font-smoothing:antialiased;margin:0;padding:0;}
 body{font-family: Roboto, sans-serif;background:#FAFAFC;color:#1D1D1F;min-height:100vh;display:flex;flex-direction:column;}
@@ -581,28 +580,45 @@ body.menu-open .mobile-nav-link:nth-child(7) { transition-delay: 0.4s; transform
 </footer>
 
 <script>
-function submitTrial() {
+async function submitTrial() {
   var btn = document.getElementById("submit-trial-btn");
   btn.disabled = true;
   btn.textContent = "Envoi en cours...";
 
   var country = document.getElementById("trial_country").value;
   var number = document.getElementById("trial_wa").value.trim();
-  var fullWa = number ? (country.replace("-CA","") + " " + number) : "Non renseign&eacute;";
+  var fullWa = number ? (country.replace("-CA","") + " " + number) : "";
 
-  var params = {
-    subject: "mojo4k.fr - Essai Gratuit",
-    plan: "Essai Gratuit 24h",
-    price: "0€",
-    first_name: document.getElementById("trial_name").value.trim() || "Non renseign&eacute;",
-    whatsapp: fullWa,
-    email: document.getElementById("trial_email").value.trim() || "Non renseign&eacute;",
-    note: (document.getElementById("trial_device").value ? "Appareil: " + document.getElementById("trial_device").value + ". " : "") +
-          (document.getElementById("trial_note").value.trim() || "—")
-  };
+  var emailVal = document.getElementById("trial_email").value.trim();
+  if (!emailVal) {
+    btn.disabled = false;
+    btn.textContent = "Obtenir mon essai gratuit →";
+    alert("Merci de renseigner votre email.");
+    return;
+  }
 
-  emailjs.send("service_zysrwpp", "template_qlmolvp", params)
-    .then(function() { showTrialSuccess(); }, function() { showTrialSuccess(); });
+  try {
+    var res = await fetch("https://iptv-trial-mojo4kfr.medmaar.workers.dev", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: document.getElementById("trial_name").value.trim(),
+        email: emailVal,
+        whatsapp: fullWa,
+        country: country,
+        device: document.getElementById("trial_device").value,
+        notes: document.getElementById("trial_note").value.trim(),
+      })
+    });
+    var data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.error || "Erreur");
+    showTrialSuccess();
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = "Obtenir mon essai gratuit →";
+    alert("Une erreur est survenue. Veuillez réessayer ou nous contacter sur WhatsApp.");
+    console.error(err);
+  }
 }
 
 function showTrialSuccess() {
