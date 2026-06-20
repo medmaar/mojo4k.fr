@@ -109,13 +109,154 @@ footer a:hover{color:#1D1D1F;}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mojo4k.fr/"}, {"@type": "ListItem", "position": 2, "name": "IPTV Pas Cher", "item": "https://mojo4k.fr/abonnement-iptv-pas-cher.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pourquoi l'IPTV est-il moins cher que Netflix ou Canal+ ?", "acceptedAnswer": {"@type": "Answer", "text": "L'IPTV regroupe des milliers de chaînes dans un seul abonnement dès 9€/mois, sans les coûts de production de contenu de Netflix ou Canal+. MOJO 4K vous donne accès à 50 000 chaînes pour moins qu'un abonnement Netflix basique."}}, {"@type": "Question", "name": "Y a-t-il une limite de données avec l'IPTV ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, l'IPTV MOJO 4K ne consomme pas votre forfait mobile. Il utilise votre connexion internet fixe (fibre, box FAI). Seule votre connexion internet est nécessaire."}}, {"@type": "Question", "name": "Peut-on avoir plusieurs abonnements IPTV pas cher ?", "acceptedAnswer": {"@type": "Answer", "text": "Avec MOJO 4K, un seul abonnement couvre 1 à 10 appareils simultanément selon le plan choisi. Pas besoin de plusieurs abonnements pour toute la famille."}}]}</script>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap' />
+<style>
+:root {
+    --a-text-primary: #1D1D1F;
+    --a-text-secondary: #86868B;
+    --a-accent: #0071E3;
+    --radius-s: 14px;
+    --ease-spring: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+body.menu-open { overflow: hidden; height: 100vh; }
+#ap-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+    height: 52px;
+    background: rgba(250, 250, 252, 0.8);
+    backdrop-filter: saturate(180%) blur(25px); -webkit-backdrop-filter: saturate(180%) blur(25px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-family: Roboto, sans-serif;
+}
+.nav-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px;
+    position: relative; z-index: 10000;
+}
+.nav-logo {
+    z-index: 10001; position: relative;
+    display: flex; align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+.nav-logo img { height: 46px; width: auto; display: block; }
+.nav-menu { display: flex; gap: 32px; align-items: center; z-index: 10001; }
+.nav-menu-desktop { display: flex; gap: 24px; align-items: center; height: 100%; }
+.nav-menu-desktop > a, .nav-dropdown-toggle {
+    font-size: 13px; color: var(--a-text-primary); text-decoration: none;
+    opacity: 0.8; transition: opacity 0.2s; font-weight: 500;
+    display: flex; align-items: center; gap: 4px; height: 100%; cursor: pointer;
+}
+.nav-menu-desktop > a:hover, .nav-dropdown:hover .nav-dropdown-toggle { opacity: 1; }
+.nav-dropdown { position: relative; height: 100%; }
+.nav-dropdown-menu {
+    position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%) translateY(10px) scale(0.98);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: saturate(180%) blur(25px);
+    -webkit-backdrop-filter: saturate(180%) blur(25px);
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    border-radius: var(--radius-s);
+    padding: 8px;
+    display: flex; flex-direction: column;
+    min-width: 240px;
+    opacity: 0; visibility: hidden;
+    transition: all 0.3s var(--ease-spring);
+    z-index: 10005;
+}
+.nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0) scale(1); }
+.nav-dropdown-menu a { padding: 12px 16px; color: var(--a-text-primary); font-size: 13px; font-weight: 500; border-radius: 8px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease; white-space: nowrap; }
+.nav-dropdown-menu a:hover { background: rgba(0, 0, 0, 0.04); color: var(--a-accent); }
+.nav-cta {
+    background: var(--a-text-primary); color: #fff !important;
+    padding: 0 14px; border-radius: 99px; font-weight: 500;
+    font-size: 11px; height: 28px; display: inline-flex; align-items: center;
+    z-index: 10001; position: relative; white-space: nowrap; text-decoration: none;
+}
+.mobile-toggle {
+    display: none;
+    width: 32px; height: 32px;
+    flex-direction: column; justify-content: center; align-items: flex-end; gap: 5px;
+    cursor: pointer; z-index: 10002;
+    -webkit-tap-highlight-color: transparent;
+}
+.mobile-toggle span { display: block; width: 24px; height: 2px; background: #1D1D1F; border-radius: 2px; transition: transform 0.3s var(--ease-spring), opacity 0.3s ease; transform-origin: right center; pointer-events: none; }
+body.menu-open .mobile-toggle span:nth-child(1) { transform: translateY(-2px) rotate(-45deg); width: 24px; }
+body.menu-open .mobile-toggle span:nth-child(2) { opacity: 0; width: 0; }
+body.menu-open .mobile-toggle span:nth-child(3) { transform: translateY(2px) rotate(45deg); width: 24px; }
+.mobile-nav-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+    background: rgba(250, 250, 252, 0.98);
+    z-index: 9998;
+    padding-top: 80px; padding-left: 32px; padding-right: 32px; padding-bottom: 40px;
+    flex-direction: column;
+    opacity: 0; pointer-events: none; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex; overflow-y: auto; -webkit-overflow-scrolling: touch;
+}
+body.menu-open .mobile-nav-overlay { opacity: 1; pointer-events: auto; visibility: visible; }
+.mobile-nav-link { font-size: 28px; font-weight: 600; color: #1D1D1F; text-decoration: none; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.05); transform: translateY(15px); opacity: 0; transition: transform 0.5s var(--ease-spring), opacity 0.5s ease; display: block; }
+body.menu-open .mobile-nav-link:nth-child(1) { transition-delay: 0.1s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(2) { transition-delay: 0.15s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(3) { transition-delay: 0.2s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(4) { transition-delay: 0.25s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(5) { transition-delay: 0.3s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(6) { transition-delay: 0.35s; transform: translateY(0); opacity: 1; }
+body.menu-open .mobile-nav-link:nth-child(7) { transition-delay: 0.4s; transform: translateY(0); opacity: 1; }
+.mobile-dropdown-container { display: flex; flex-direction: column; width: 100%; }
+.mobile-dropdown-toggle { display: flex; justify-content: space-between; align-items: center; width: 100%; cursor: pointer; padding: 16px 0; font-size: 28px; font-weight: 600; color: #1D1D1F; border-bottom: 1px solid rgba(0,0,0,0.05); -webkit-tap-highlight-color: transparent; }
+.mobile-dropdown-toggle svg { transition: transform 0.3s var(--ease-spring); pointer-events: none; }
+.mobile-dropdown-content { display: flex; flex-direction: column; max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease-spring), opacity 0.3s ease; opacity: 0; }
+.mobile-dropdown-container.active .mobile-dropdown-content { max-height: 400px; opacity: 1; margin-top: 8px; margin-bottom: 16px; }
+.mobile-dropdown-container.active .mobile-dropdown-toggle { border-bottom: none; }
+.mobile-dropdown-container.active .mobile-dropdown-toggle svg { transform: rotate(180deg); }
+.mobile-sub-link { font-size: 18px; font-weight: 500; color: var(--a-text-secondary); text-decoration: none; padding: 12px 0 12px 16px; display: block; border-left: 2px solid rgba(0,0,0,0.05); margin-left: 8px; }
+.mobile-sub-link:active { color: var(--a-accent); border-left-color: var(--a-accent); }
+@media (max-width: 900px) {
+    .nav-menu-desktop { display: none; }
+    .mobile-toggle { display: flex; }
+    .nav-menu { gap: 16px; }
+    .nav-cta { display: none; }
+}
+</style>
 </head>
 <body>
 <nav id="ap-header">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="/mojo4k-logo.png" alt="MOJO 4K" style="height:46px;width:auto;display:block;" decoding="async"></a>
-    <a href="/" class="back-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>Retour</a>
-  </div>
+    <div class="nav-inner">
+        <a href="/" class="nav-logo" style="display:flex;align-items:center;gap:0px;">
+            <img src="/mojo4k-logo.png" alt="MOJO 4K" style="height:46px;width:auto;display:block;" decoding="async">
+        </a>
+        <div class="nav-menu">
+            <div class="nav-menu-desktop">
+                <a href="/avantages.html">Avantages</a>
+                <a href="/appareils.html">Appareils</a>
+                <div class="nav-dropdown">
+                    <a class="nav-dropdown-toggle">Tarifs <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/tarifs.html">Abonnement IPTV France</a>
+                        <a href="/tarifs.html">Abonnement IPTV</a>
+                        <a href="/appareils.html">IPTV Smarters Pro</a>
+                    </div>
+                </div>
+                <a href="/avis.html">Avis</a>
+                <a href="/aide.html">Aide</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/essai-iptv.html" style="color:#0071E3;font-weight:600;">Essai gratuit</a>
+            </div>
+            <a href="/tarifs.html" class="nav-cta">Voir les tarifs</a>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="/avantages.html" class="mobile-nav-link">Avantages</a>
+        <a href="/appareils.html" class="mobile-nav-link">Appareils</a>
+        <a href="/tarifs.html" class="mobile-nav-link">Tarifs</a>
+        <a href="/avis.html" class="mobile-nav-link">Avis</a>
+        <a href="/aide.html" class="mobile-nav-link">Aide</a>
+        <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        <a href="/essai-iptv.html" class="mobile-nav-link" style="color:#0071E3;font-weight:700;">Essai gratuit</a>
+    </div>
 </nav>
 <div class="hero">
   <span class="eyebrow">💶 IPTV pas cher</span>
@@ -161,8 +302,9 @@ footer a:hover{color:#1D1D1F;}
   <div class="footer-grid">
     <div class="footer-col">
       <div class="footer-logo">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="4" width="18" height="12" rx="3" fill="none" stroke="#1D1D1F" stroke-width="1.8"/><rect x="5" y="6.5" width="12" height="7" rx="1.5" fill="#F0F4FF"/><rect x="5" y="6.5" width="4" height="7" fill="#002395" rx="1.5"/><rect x="9" y="6.5" width="4" height="7" fill="#EDEDED"/><rect x="13" y="6.5" width="4" height="7" fill="#ED2939" rx="1.5"/><line x1="8" y1="16" x2="6.5" y2="19" stroke="#1D1D1F" stroke-width="1.5" stroke-linecap="round"/><line x1="14" y1="16" x2="15.5" y2="19" stroke="#1D1D1F" stroke-width="1.5" stroke-linecap="round"/><line x1="5.5" y1="19" x2="16.5" y2="19" stroke="#1D1D1F" stroke-width="1.5" stroke-linecap="round"/></svg>
-        
+        <a href="/" style="display:flex;align-items:center;" aria-label="MOJO 4K - Accueil">
+          <img src="/mojo4k-logo.png" alt="MOJO 4K" style="height:52px;width:auto;display:block;" decoding="async">
+        </a>
       </div>
       <p class="footer-tagline">Meilleur abonnement IPTV France 4K. Dès 9€/mois, activation 5 min, support WhatsApp 7j/7.</p>
       <a href="https://wa.me/17828026280" class="footer-wa" target="_blank" rel="noopener noreferrer">
@@ -217,5 +359,22 @@ footer a:hover{color:#1D1D1F;}
   </div>
 </footer>
 <script>document.querySelectorAll('.faq-item').forEach(function(i){i.addEventListener('click',function(){this.classList.toggle('open');});});</script>
+<script>
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggleBtn = document.getElementById('mobileToggle');
+        var body = document.body;
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                body.classList.toggle('menu-open');
+            });
+        }
+        var mobileStandardLinks = document.querySelectorAll('.mobile-nav-overlay > a.mobile-nav-link');
+        mobileStandardLinks.forEach(function(link) { link.addEventListener('click', function() { body.classList.remove('menu-open'); }); });
+    });
+})();
+</script>
 </body>
 </html>
