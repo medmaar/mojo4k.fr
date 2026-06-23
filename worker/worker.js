@@ -292,7 +292,7 @@ async function handleFetch(request, env) {
     await env.TRIALS.put(
       `trial:${email}`,
       JSON.stringify({ name, email, username, password, m3uUrl, expiry, reminder_sent: false, followup_sent: false }),
-      { expirationTtl: 4 * 24 * 60 * 60 }
+      { expirationTtl: 30 * 24 * 60 * 60 }
     );
 
     return jsonRes({ success: true });
@@ -318,7 +318,7 @@ async function handleScheduled(env) {
       try {
         await sendEmail(email, "⏳ Votre essai Mojo 4K expire dans 4 heures", reminderEmail(name, username, password, m3uUrl));
         trial.reminder_sent = true;
-        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
+        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Rappel → ${email}`);
       } catch (e) { console.error(`[cron] Échec rappel:`, e.message); }
     }
@@ -327,7 +327,7 @@ async function handleScheduled(env) {
       try {
         await sendEmail(email, "Votre essai Mojo 4K est terminé — Revenez quand vous voulez 🎬", followupEmail(name));
         trial.followup_sent = true;
-        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
+        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Suivi → ${email}`);
       } catch (e) { console.error(`[cron] Échec suivi:`, e.message); }
     }
