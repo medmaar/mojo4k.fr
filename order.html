@@ -655,21 +655,30 @@ function submitOrder(){
   btn.disabled = true;
   btn.textContent = "Envoi en cours...";
 
-  var country = document.getElementById("wa_country").value;
+  var countrySelect = document.getElementById("wa_country");
+  var dialCode = countrySelect.value;
+  var countryName = countrySelect.selectedOptions[0].text.replace(/\s*\(\+\d+\)\s*$/, "");
   var number = document.getElementById("wa_number").value.trim();
-  var fullWa = number ? (country.replace("-CA","")+" "+number) : "Non renseigné";
-  var devLabel = planDevices===1?"1 Appareil":planDevices+" Appareils";
+  var fullPhone = number ? (dialCode+" "+number) : "Non renseigné";
+  var firstName = document.getElementById("first_name").value.trim() || "Non renseigné";
+  var emailVal = document.getElementById("email").value.trim() || "Non renseigné";
+  var noteVal = document.getElementById("note").value.trim();
 
   var durFull2 = {1:"1 Mois",3:"3 Mois",6:"6 Mois",12:"1 Année"}[planDuration];
   var devLabel2 = planDevices===1?"1 Appareil":planDevices+" Appareils";
   var params = {
+    site_name: "MOJO 4K",
+    name: firstName,
+    time: new Date().toLocaleString("fr-FR", {timeZone:"Europe/Paris"}),
     subject: "mojo4k.fr - "+durFull2+" - "+devLabel2,
     plan: devLabel2+" — "+durFull2,
     price: planPrice+"€",
-    first_name: document.getElementById("first_name").value.trim() || "Non renseigné",
-    whatsapp: fullWa,
-    email: document.getElementById("email").value.trim() || "Non renseigné",
-    note: document.getElementById("note").value.trim() || "—"
+    from_name: firstName,
+    from_email: emailVal,
+    phone: fullPhone,
+    country: countryName,
+    device: "Non renseigné",
+    message: noteVal || "—"
   };
 
   emailjs.send("service_zysrwpp","template_qlmolvp", params)
