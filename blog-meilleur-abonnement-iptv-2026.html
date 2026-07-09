@@ -335,7 +335,7 @@ body.menu-open .mobile-nav-link:nth-child(7) { transition-delay: 0.4s; transform
       <p class="footer-tagline">Meilleur abonnement IPTV France 4K. Dès 9€/mois, activation 5 min, support WhatsApp 7j/7.</p>
       <a href="/contact/msg" class="footer-wa" target="_blank" rel="noopener noreferrer">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm4.52 14.21c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.88.86-.88 2.11s.9 2.45 1.02 2.61c.12.16 1.77 2.7 4.29 3.79 1.7.73 2.05.58 2.79.51.66-.06 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18z"/></svg>
-        +1 782 802 6280
+        WhatsApp
       </a>
     </div>
     <div class="footer-col">
@@ -405,5 +405,85 @@ body.menu-open .mobile-nav-link:nth-child(7) { transition-delay: 0.4s; transform
 <a href="/contact/msg?msg=Bonjour%20!%20Je%20m%27int%C3%A9resse%20%C3%A0%20votre%20service%20IPTV." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
   <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.36.66 4.57 1.8 6.46L4 29l7.7-1.75a11.98 11.98 0 0 0 4.32.8h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-4.57 1.04 1.06-4.45-.24-.38a9.86 9.86 0 0 1-1.5-5.5c0-5.47 4.45-9.92 9.93-9.92 2.65 0 5.14 1.03 7.01 2.91a9.85 9.85 0 0 1 2.9 7.02c0 5.47-4.45 9.87-9.87 9.87zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg>
 </a>
+<style>
+.sales-banner{position:fixed;left:18px;bottom:18px;z-index:79;max-width:266px;display:flex;align-items:center;gap:11px;padding:11px 30px 11px 11px;border-radius:12px;background:#ffffff;border:1px solid rgba(0,0,0,0.06);box-shadow:0 16px 34px -12px rgba(0,0,0,0.45),0 2px 6px rgba(0,0,0,0.08);transform:translateY(140%);opacity:0;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .4s cubic-bezier(.4,0,.2,1);}
+.sales-banner.show{transform:translateY(0);opacity:1;}
+.sales-banner-icon{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#FFE9A8 0%,#DFAD05 100%);box-shadow:0 0 0 2px rgba(223,173,5,0.15);}
+.sales-banner-title{font-weight:700;font-size:12.5px;line-height:1.35;color:#1A1A1A;}
+.sales-banner-title b{font-weight:800;}
+.sales-banner-text{font-size:10.5px;color:#8A8A8A;margin-top:2px;display:flex;align-items:center;gap:4px;}
+.sales-banner-text::before{content:"";width:6px;height:6px;border-radius:50%;background:#2ECC71;display:inline-block;flex-shrink:0;}
+.sales-banner-close{position:absolute;top:6px;right:8px;background:none;border:none;color:#B8B8B8;font-size:14px;line-height:1;cursor:pointer;padding:3px;}
+.sales-banner-close:hover{color:#666;}
+@media (max-width:600px){.sales-banner{left:12px;bottom:12px;max-width:calc(100% - 96px);padding:10px 26px 10px 10px;}}
+</style>
+<div class="sales-banner" id="salesBanner">
+  <button class="sales-banner-close" id="salesBannerClose" aria-label="Fermer">&times;</button>
+  <div class="sales-banner-icon">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+      <path d="M6 7h12l-1 12.5a2 2 0 0 1-2 1.8H9a2 2 0 0 1-2-1.8L6 7z" stroke="#1A1400" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M9 7V6a3 3 0 0 1 6 0v1" stroke="#1A1400" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M9.5 12.5l1.8 1.8L14.8 11" stroke="#1A1400" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="sales-banner-body">
+    <div class="sales-banner-title" id="salesBannerTitle">Nouvel achat</div>
+    <div class="sales-banner-text" id="salesBannerText">à l'instant</div>
+  </div>
+</div>
+<script>
+(function(){
+  var banner = document.getElementById('salesBanner');
+  var closeBtn = document.getElementById('salesBannerClose');
+  var titleEl = document.getElementById('salesBannerTitle');
+  var textEl = document.getElementById('salesBannerText');
+  if(!banner || !titleEl || !textEl) return;
+  if(sessionStorage.getItem('m4kfr_sales_banner_dismissed') === '1') return;
+
+  var names = ["Lucas", "Hugo", "Léo", "Louis", "Gabriel", "Jules", "Nathan", "Ethan", "Théo", "Enzo", "Emma", "Louise", "Alice", "Chloé", "Léa", "Manon", "Camille", "Inès", "Sarah", "Zoé"];
+  var cities = ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier", "Bordeaux", "Lille", "Rennes", "Reims", "Le Havre", "Saint-Étienne", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes", "Villeurbanne"];
+  var plans = ["Abonnement 1 Mois", "Abonnement 3 Mois", "Abonnement 3 Mois", "Abonnement 6 Mois", "Abonnement 6 Mois", "Abonnement 12 Mois", "Abonnement 12 Mois", "Abonnement 12 Mois", "Abonnement 12 Mois", "Abonnement 12 Mois"];
+  var timeAgo = ["à l'instant", "il y a 2 minutes", "il y a 5 minutes", "il y a 9 minutes"];
+
+  function pick(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
+
+  var dismissed = false;
+  var lastName = null;
+  var timers = [];
+  function setT(fn, ms){ var id = setTimeout(fn, ms); timers.push(id); return id; }
+
+  function nextNotification(){
+    var name = pick(names);
+    while(name === lastName){ name = pick(names); }
+    lastName = name;
+    var city = pick(cities);
+    var plan = pick(plans);
+    titleEl.innerHTML = '<b>' + name + '</b> de ' + city + ' vient d\'acheter un ' + plan;
+    textEl.textContent = pick(timeAgo);
+  }
+
+  function cycle(){
+    if(dismissed) return;
+    nextNotification();
+    banner.classList.add('show');
+    setT(function(){
+      if(dismissed) return;
+      banner.classList.remove('show');
+      setT(cycle, 3000);
+    }, 5000);
+  }
+
+  setT(cycle, 2000 + Math.floor(Math.random() * 2000));
+
+  if(closeBtn){
+    closeBtn.addEventListener('click', function(){
+      dismissed = true;
+      banner.classList.remove('show');
+      sessionStorage.setItem('m4kfr_sales_banner_dismissed', '1');
+      timers.forEach(clearTimeout);
+    });
+  }
+})();
+</script>
 </body>
 </html>
