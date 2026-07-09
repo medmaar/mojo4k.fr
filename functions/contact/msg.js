@@ -14,7 +14,7 @@
 // and push - no need to touch any page.
 
 const WHATSAPP_NUMBER = '17828026280'; // digits only, no +, spaces or dashes
-const BRAND_GREETING = 'Salut MOJO4K !';
+const BRAND_GREETING = 'Salut Mojo 4k !';
 
 function buildMessage(raw) {
   if (!raw) return BRAND_GREETING;
