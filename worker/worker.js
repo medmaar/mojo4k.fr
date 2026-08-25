@@ -26,10 +26,10 @@ async function apiGet(params) {
   return { status: res.status, text: await res.text() };
 }
 
-async function sendEmail(to, subject, html) {
+async function sendEmail(to, subject, html, resendKey) {
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: { Authorization: `Bearer ${RESEND_KEY}`, "Content-Type": "application/json" },
+    headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
     body: JSON.stringify({ from: FROM_EMAIL, to, subject, html }),
   });
   if (!res.ok) throw new Error(`Resend (${res.status}): ${await res.text()}`);
@@ -285,10 +285,10 @@ async function handleFetch(request, env) {
     const m3uUrl = `${HOST}/get.php?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&type=m3u_plus&output=ts`;
 
     step = "email_client";
-    await sendEmail(email, "Votre accès Mojo 4K — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl));
+    await sendEmail(email, "Votre accès Mojo 4K — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl, RESEND_KEY));
 
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `Automation / mojo4k.fr / trial / ${name || "—"} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
+    await sendEmail(ADMIN_EMAIL, `Automation / mojo4k.fr / trial / ${name || "—"} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl, RESEND_KEY));
 
     step = "kv_store";
     const expiry = Date.now() + 24 * 60 * 60 * 1000;
@@ -336,7 +336,7 @@ async function handleScheduled(env) {
 
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
       try {
-        await sendEmail(email, "⏳ Votre essai Mojo 4K expire dans 4 heures", reminderEmail(name, username, password, m3uUrl));
+        await sendEmail(email, "⏳ Votre essai Mojo 4K expire dans 4 heures", reminderEmail(name, username, password, m3uUrl, RESEND_KEY));
         trial.reminder_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Rappel → ${email}`);
@@ -345,7 +345,7 @@ async function handleScheduled(env) {
 
     if (!followup_sent && now >= expiry) {
       try {
-        await sendEmail(email, "Votre essai Mojo 4K est terminé — Revenez quand vous voulez 🎬", followupEmail(name));
+        await sendEmail(email, "Votre essai Mojo 4K est terminé — Revenez quand vous voulez 🎬", followupEmail(name, RESEND_KEY));
         trial.followup_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Suivi → ${email}`);
