@@ -262,4 +262,75 @@
   <url><loc>https://mojo4k.fr/iptv-android-tv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://mojo4k.fr/iptv-google-tv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://mojo4k.fr/iptv-cinema.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- WAVE 4 — VILLES (25) -->
+  <url><loc>https://mojo4k.fr/iptv-meaux.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-melun.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-asnieres-sur-seine.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-aulnay-sous-bois.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-rueil-malmaison.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-villeneuve-dascq.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-compiegne.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-beauvais.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-saint-quentin.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-hyeres.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-grasse.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-la-seyne-sur-mer.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-sete.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-montauban.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-castres.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-rodez.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-brive-la-gaillarde.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-alencon.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-thionville.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-macon.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-bastia.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vichy.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-villefranche-sur-saone.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-saint-herblain.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-sartrouville.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <!-- WAVE 4 — COMPARATIFS vs (15) -->
+  <url><loc>https://mojo4k.fr/tivimate-vs-smarters-pro.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://mojo4k.fr/tivimate-vs-smarters-lite.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/fire-stick-vs-chromecast.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://mojo4k.fr/fire-stick-vs-android-box.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/samsung-vs-lg-iptv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/tivimate-vs-kodi.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vs-satellite.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vs-tnt.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vs-molotov.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/nvidia-shield-vs-fire-stick.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/mag-box-vs-android-box.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/apple-tv-vs-chromecast-iptv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/tivimate-vs-vlc.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/smarters-vs-mytvonline.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vs-netflix-comparatif.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <!-- WAVE 4 — MARQUES TV (8) -->
+  <url><loc>https://mojo4k.fr/iptv-philips.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-sony.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-tcl.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-hisense.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-xiaomi.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-nvidia-shield.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-formuler.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-firestick-4k.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <!-- WAVE 4 — APPS (6) -->
+  <url><loc>https://mojo4k.fr/iptv-kodi.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-vlc-lecteur.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-gse-smart-iptv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-ss-iptv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-perfect-player.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-flex-iptv.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <!-- WAVE 4 — SPORT (4) -->
+  <url><loc>https://mojo4k.fr/iptv-ligue-1.html</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-champions-league.html</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-bein-sports.html</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-formule-1.html</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.88</priority></url>
+  <!-- WAVE 4 — INTERNATIONAL (6) -->
+  <url><loc>https://mojo4k.fr/iptv-allemagne.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-pays-bas.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-emirats.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-usa.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-arabie-saoudite.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.fr/iptv-nigeria.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
 </urlset>
