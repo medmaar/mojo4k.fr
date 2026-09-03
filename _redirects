@@ -1,0 +1,4 @@
+# Redirect all .html URLs to clean URLs (canonical)
+# This prevents duplicate content between /page and /page.html
+/index.html / 301
+/*.html /:splat 301
