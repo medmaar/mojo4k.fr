@@ -20,7 +20,6 @@
 # Sitemap should be fresh
 /sitemap.xml
   Cache-Control: public, max-age=3600, s-maxage=86400
-  X-Robots-Tag: noindex
 
 # Robots should be fresh
 /robots.txt
