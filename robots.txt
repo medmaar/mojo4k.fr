@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /order
 Disallow: /contact/msg
-Disallow: /essai-iptv
 
 Sitemap: https://mojo4k.fr/sitemap.xml
