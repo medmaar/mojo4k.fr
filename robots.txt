@@ -3,4 +3,39 @@ Allow: /
 Disallow: /order
 Disallow: /contact/msg
 
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Googlebot image indexing allowed
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+
 Sitemap: https://mojo4k.fr/sitemap.xml
