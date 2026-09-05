@@ -3,14 +3,11 @@ Allow: /
 Disallow: /order
 Disallow: /contact/msg
 
-# Block AI training crawlers
+# Block AI training crawlers (non-Google)
 User-agent: GPTBot
 Disallow: /
 
 User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: Google-Extended
 Disallow: /
 
 User-agent: anthropic-ai
@@ -30,6 +27,10 @@ Disallow: /
 
 User-agent: Bytespider
 Disallow: /
+
+# Google-Extended allowed — enables Google AI Overviews / SGE appearances
+User-agent: Google-Extended
+Allow: /
 
 # Googlebot image indexing allowed
 User-agent: Googlebot-Image
