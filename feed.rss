@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Blog IPTV France — MOJO 4K</title>
+    <link>https://mojo4k.fr/blog</link>
+    <description>Guides, tutoriels et actualités IPTV en France. Abonnement MOJO 4K — dès 9€/mois.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 05 Sep 2026 09:00:00 +0200</lastBuildDate>
+    <ttl>1440</ttl>
+    <atom:link href="https://mojo4k.fr/feed.rss" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://mojo4k.fr/mojo4k-logo.png</url>
+      <title>Blog IPTV France — MOJO 4K</title>
+      <link>https://mojo4k.fr/blog</link>
+      <width>200</width>
+      <height>60</height>
+    </image>
+    <managingEditor>support@mojo4k.fr (MOJO 4K)</managingEditor>
+    <webMaster>support@mojo4k.fr (MOJO 4K)</webMaster>
+    <copyright>2026 MOJO 4K</copyright>
+    <category>IPTV</category>
+
+  <item>
+    <title>TiviMate vs Smarters Pro 2026 : Comparatif Complet</title>
+    <link>https://mojo4k.fr/blog-comparatif-tivimate-smarters</link>
+    <description>Comparatif complet entre TiviMate et IPTV Smarters Pro. Interface, fonctionnalités, prix et compatibilité pour choisir la Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-comparatif-tivimate-smarters</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Guide Débutant IPTV — Tout Comprendre en 2026</title>
+    <link>https://mojo4k.fr/blog-guide-debutant-iptv</link>
+    <description>Guide complet pour débutants : qu'est-ce que l'IPTV, comment ça marche, comment débuter avec MOJO 4K. Tout en 10 minutes Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-guide-debutant-iptv</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV en Belgique — Guide Complet 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-belgique</link>
+    <description>Guide complet de l'IPTV en Belgique. Chaînes belges francophones (RTBF, RTL-TVI), compatible Proximus, VOO et Telenet Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-belgique</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Débit Internet pour l'IPTV — Guide Complet 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-debit-connexion</link>
+    <description>Découvrez le débit internet nécessaire pour regarder l'IPTV en HD, Full HD et 4K. Test de vitesse, conseils d'optimisation Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-debit-connexion</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV pour Enfants 2026 — Contrôle Parental</title>
+    <link>https://mojo4k.fr/blog-iptv-enfants</link>
+    <description>Guide des meilleures chaînes pour enfants disponibles en IPTV avec MOJO 4K. Contrôle parental, dessins animés et programmes Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-enfants</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>M3U vs Xtream Codes IPTV — Lequel Choisir ? 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-m3u-xtream</link>
+    <description>M3U ou Xtream Codes pour configurer votre IPTV ? Comparatif des deux protocoles, avantages et comment configurer MOJO 4K avec Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-m3u-xtream</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Maroc depuis la France — Guide Complet 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-maroc</link>
+    <description>Guide complet de l'IPTV au Maroc. Chaînes marocaines (2M, Al Aoula, Medi 1 TV), compatible Maroc Telecom, Inwi et Orange Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-maroc</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Replay et Catch-Up TV — Guide Complet 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-replay-catch-up</link>
+    <description>Guide complet sur le replay IPTV. Comment rattraper vos émissions manquées, quelles chaînes proposent le catch-up et comment y Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-replay-catch-up</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Sans Abonnement : Gratuit ou Payant en 2026 ?</title>
+    <link>https://mojo4k.fr/blog-iptv-sans-abonnement</link>
+    <description>Peut-on regarder l'IPTV gratuitement ? Comparatif IPTV gratuit vs payant. Risques, qualité et alternatives légales expliqués Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-sans-abonnement</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Sans Buffering — 10 Solutions 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-sans-buffering</link>
+    <description>Votre IPTV buffe ? Ce guide complet propose 10 solutions efficaces pour éliminer le buffering et regarder en 4K sans interruption Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-sans-buffering</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Sport : Guide Complet pour Regarder en 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-sport-guide</link>
+    <description>Guide complet pour regarder le sport en direct avec l'IPTV en 2026. Ligue 1, Champions League, beIN Sports, F1, NBA — toutes Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-sport-guide</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV vs Canal+ : Lequel choisir en 2026 ?</title>
+    <link>https://mojo4k.fr/blog-iptv-vs-canal-plus</link>
+    <description>Comparatif IPTV vs Canal+ en 2026 : prix, chaînes, qualité et flexibilité. Découvrez pourquoi MOJO 4K est l'alternative à Canal+ dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-vs-canal-plus</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Meilleur Lecteur IPTV 2026 — Comparatif Complet</title>
+    <link>https://mojo4k.fr/blog-meilleur-lecteur-iptv</link>
+    <description>Quel est le meilleur lecteur IPTV en 2026 ? Comparatif TiviMate, IPTV Smarters Pro, Kodi, VLC, GSE, SS IPTV et Perfect Player Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-meilleur-lecteur-iptv</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>TiviMate Premium : Guide Complet et Avis 2026</title>
+    <link>https://mojo4k.fr/blog-tivimate-premium-guide</link>
+    <description>Tout sur TiviMate Premium : fonctionnalités, prix (3,99€/an), enregistrement et notre avis. Vaut-il vraiment le coup ? Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-tivimate-premium-guide</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Choisir son Abonnement IPTV 2026 — Guide</title>
+    <link>https://mojo4k.fr/blog-meilleur-abonnement-iptv-2026</link>
+    <description>Comment choisir le meilleur abonnement IPTV France en 2026 ? Nos 5 critères essentiels, les pièges à éviter et notre Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Sun, 01 Mar 2026 09:00:00 +0200</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-meilleur-abonnement-iptv-2026</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV vs Netflix vs Canal+ 2026 — Comparatif</title>
+    <link>https://mojo4k.fr/blog-iptv-vs-netflix</link>
+    <description>IPTV vs Netflix vs Canal+ : comparaison des prix, du catalogue, de la qualité et de la compatibilité en 2026. L'IPTV gagne-t-il Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Sun, 15 Feb 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-vs-netflix</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Sport &amp; Football France 2026 — beIN, RMC</title>
+    <link>https://mojo4k.fr/blog-iptv-sport-foot</link>
+    <description>Regardez beIN Sports, RMC Sport et la Ligue 1 via IPTV en France. Guide complet pour les amateurs de foot et de sport en 2026 avec Essayez MOJO 4K dès.</description>
+    <pubDate>Sun, 01 Feb 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-sport-foot</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Connexion Internet pour IPTV 4K — Guide Débit 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-4k-connexion</link>
+    <description>Quel débit internet pour regarder l'IPTV en 4K sans buffering ? Fibre, ADSL, VDSL — guide complet des vitesses recommandées pour Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Tue, 20 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-4k-connexion</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Qu'est-ce que l'IPTV ? Guide pour Débutants 2026</title>
+    <link>https://mojo4k.fr/blog-quest-ce-que-iptv</link>
+    <description>Qu'est-ce que l'IPTV ? Fonctionnement, avantages, compatibilité et comment choisir son abonnement IPTV en France. Guide complet Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Thu, 15 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-quest-ce-que-iptv</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Installer IPTV sur Smart TV Samsung &amp; LG 2026</title>
+    <link>https://mojo4k.fr/blog-installer-iptv-smart-tv</link>
+    <description>Guide d'installation IPTV sur Smart TV Samsung, LG et Sony en 2026. Étapes simples pour configurer IPTV Smarters Pro ou TiviMate Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Sat, 10 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-installer-iptv-smart-tv</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV Légal en France 2026 — Ce qu'il Faut Savoir</title>
+    <link>https://mojo4k.fr/blog-iptv-legal-france</link>
+    <description>L'IPTV est-il légal en France ? État de la législation en 2026, différences entre IPTV légal et illégal, et comment s'y retrouver Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Thu, 01 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-legal-france</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>IPTV sur PC Windows et Mac — Guide Complet 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-pc-windows</link>
+    <description>Comment regarder l'IPTV sur PC Windows 10/11 ou Mac. Meilleures applications, configuration VLC, IPTV Smarters et Kodi avec MOJO Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Thu, 01 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-pc-windows</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Comment Installer l'IPTV sur Samsung Smart TV 2026</title>
+    <link>https://mojo4k.fr/blog-iptv-samsung-smart-tv</link>
+    <description>Guide complet pour installer et configurer l'IPTV sur Samsung Smart TV Tizen 2026. Méthodes Fire Stick, Smart IPTV et boîtier Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Thu, 01 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-iptv-samsung-smart-tv</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  <item>
+    <title>Guide Complet TiviMate IPTV 2026 — Configuration</title>
+    <link>https://mojo4k.fr/blog-tivimate-guide</link>
+    <description>Guide complet TiviMate 2026 : installation sur Fire Stick et Android TV, configuration avec Xtream Codes, EPG et astuces pour une Essayez MOJO 4K dès 9€/mois.</description>
+    <pubDate>Thu, 01 Jan 2026 09:00:00 +0100</pubDate>
+    <guid isPermaLink="true">https://mojo4k.fr/blog-tivimate-guide</guid>
+    <author>support@mojo4k.fr (MOJO 4K)</author>
+    <category>IPTV</category>
+  </item>
+  </channel>
+</rss>

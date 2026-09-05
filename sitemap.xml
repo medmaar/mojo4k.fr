@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mojo4k.fr/essai-iptv</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mojo4k.fr/assets/video/og-image.jpg</image:loc>
+      <image:title>Essai IPTV Gratuit 24h — MOJO 4K</image:title>
+    </image:image>
+  
   </url>
   <url>
     <loc>https://mojo4k.fr/abonnement-iptv-1-mois</loc>
@@ -35,6 +40,11 @@
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mojo4k.fr/assets/video/og-image.jpg</image:loc>
+      <image:title>Abonnement IPTV France — MOJO 4K</image:title>
+    </image:image>
+  
   </url>
   <url>
     <loc>https://mojo4k.fr/abonnement-iptv-pas-cher</loc>
@@ -317,6 +327,11 @@
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mojo4k.fr/assets/video/live-sports-hero-poster.jpg</image:loc>
+      <image:title>Meilleur Abonnement IPTV France 4K — MOJO 4K</image:title>
+    </image:image>
+  
   </url>
   <url>
     <loc>https://mojo4k.fr/installer-iptv-android-tv</loc>
@@ -2309,6 +2324,11 @@
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mojo4k.fr/assets/video/og-image.jpg</image:loc>
+      <image:title>Tarifs Abonnement IPTV — MOJO 4K</image:title>
+    </image:image>
+  
   </url>
   <url>
     <loc>https://mojo4k.fr/tivimate-gratuit-vs-premium</loc>

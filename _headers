@@ -36,3 +36,8 @@
 # Robots should be fresh
 /robots.txt
   Cache-Control: public, max-age=3600
+
+# RSS feed
+/feed.rss
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600, s-maxage=86400
