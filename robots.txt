@@ -1,9 +1,12 @@
+# MOJO 4K — robots.txt
+# Last updated: 2026-09-05
+
 User-agent: *
 Allow: /
 Disallow: /order
 Disallow: /contact/msg
 
-# Block AI training crawlers (non-Google)
+# Block AI training crawlers (data scraping for model training)
 User-agent: GPTBot
 Disallow: /
 
@@ -28,17 +31,27 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-# Google-Extended allowed — enables Google AI Overviews / SGE appearances
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# Google-Extended: ALLOWED — enables Google AI Overviews & Search Generative Experience
 User-agent: Google-Extended
 Allow: /
 
-# Googlebot image indexing allowed
+# Googlebot image indexing
 User-agent: Googlebot-Image
 Allow: /assets/
 Allow: /*.jpg
 Allow: /*.png
 Allow: /*.webp
 
+# Sitemaps
 Sitemap: https://mojo4k.fr/sitemap-index.xml
 Sitemap: https://mojo4k.fr/sitemap.xml
 Sitemap: https://mojo4k.fr/sitemap-news.xml
