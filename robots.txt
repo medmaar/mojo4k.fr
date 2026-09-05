@@ -39,4 +39,6 @@ Allow: /*.jpg
 Allow: /*.png
 Allow: /*.webp
 
+Sitemap: https://mojo4k.fr/sitemap-index.xml
 Sitemap: https://mojo4k.fr/sitemap.xml
+Sitemap: https://mojo4k.fr/sitemap-news.xml
