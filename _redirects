@@ -27,4 +27,36 @@
 /stbemu.html /stbemu 301
 /telecommande-iptv.html /telecommande-iptv 301
 /tivimate-samsung-lg-mac.html /tivimate-samsung-lg-mac 301
+# Keyword gap guides, second pass (Oct 2026)
+/iptv-hbo-max.html /iptv-hbo-max 301
+/iptv-telephone.html /iptv-telephone 301
+/iptv-tf1.html /iptv-tf1 301
+/iptv-ufc.html /iptv-ufc 301
+/mega-ott.html /mega-ott 301
+/neo-tv-pro.html /neo-tv-pro 301
+/ott-player.html /ott-player 301
+/services-iptv-avis.html /services-iptv-avis 301
+/vavoo.html /vavoo 301
+/xciptv.html /xciptv 301
+# Alias slugs for spelling variants of the new guides
+/xciptv-player /xciptv 301
+/xiptv /xciptv 301
+/ottplayer /ott-player 301
+/ott-plus-player /ott-player 301
+/vavoo-iptv /vavoo 301
+/vavoo-kodi /vavoo 301
+/iptv-mobile /iptv-telephone 301
+/tf1-iptv /iptv-tf1 301
+/iptv-hbo /iptv-hbo-max 301
+/iptv-pluto-tv /iptv-hbo-max 301
+/ufc-iptv /iptv-ufc 301
+/neotv-pro /neo-tv-pro 301
+/neo-tv-pro-2 /neo-tv-pro 301
+/megaott /mega-ott 301
+/mega-iptv /mega-ott 301
+/avis-services-iptv /services-iptv-avis 301
+# Broken internal links found during audit
+/iptv-iphone /installer-iptv-iphone 301
+/iptv-ipad /installer-iptv-ipad 301
+/iptv-smasters-pro /iptv-smarters-pro 301
 /*.html /:splat 301
