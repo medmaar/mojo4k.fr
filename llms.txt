@@ -112,3 +112,30 @@ All content is in French. The site covers IPTV technology, streaming guides, dev
 - Sitemap: https://mojo4k.fr/sitemap-index.xml
 - Main sitemap: https://mojo4k.fr/sitemap.xml
 - News sitemap: https://mojo4k.fr/sitemap-news.xml
+
+### Practical guides (October 2026)
+- https://mojo4k.fr/arnaque-iptv — Arnaque IPTV : les signaux qui doivent alerter
+- https://mojo4k.fr/boitiers-iptv-marques — Meilleur box IPTV : comparatif des marques 2026
+- https://mojo4k.fr/downloader-iptv — Downloader IPTV : installer un lecteur sur Fire Stick
+- https://mojo4k.fr/flix-iptv — Flix IPTV : activation, playlist et alternatives
+- https://mojo4k.fr/formuler-modeles — Box Formuler : quel modèle choisir en 2026 ?
+- https://mojo4k.fr/ibo-player — IBO Player : prix, activation et alternatives
+- https://mojo4k.fr/iplaytv-iptvx-apple-tv — iPlayTV, IPTVX : meilleurs lecteurs Apple TV
+- https://mojo4k.fr/iptv-8k — IPTV 8K : ce que vous regardez vraiment en 2026
+- https://mojo4k.fr/iptv-enigma2 — IPTV Enigma2 : bouquets M3U, plugins et EPG
+- https://mojo4k.fr/iptv-multi-ecrans — IPTV combien de connexions ? Le guide multi-écrans
+- https://mojo4k.fr/iptv-ne-fonctionne-plus — IPTV ne fonctionne plus : diagnostic et solutions
+- https://mojo4k.fr/iptv-panasonic — IPTV Panasonic : quelle solution selon votre TV
+- https://mojo4k.fr/iptv-ps5 — IPTV sur PS5 : ce qui marche vraiment en 2026
+- https://mojo4k.fr/iptv-smarters-pro-ne-fonctionne-pas — IPTV Smarters Pro ne fonctionne pas : solutions
+- https://mojo4k.fr/iptv-smarters-pro-pc-mac — IPTV Smarters Pro sur PC et Mac : installation 2026
+- https://mojo4k.fr/iptv-smarters-pro-smart-tv — IPTV Smarters Pro sur Smart TV : quelle TV, quel store
+- https://mojo4k.fr/iptv-tv-non-connectee — IPTV sur TV non connectée : toutes les solutions
+- https://mojo4k.fr/jellyfin-stremio-iptv — IPTV sur Jellyfin, Plex, Stremio et Kodi
+- https://mojo4k.fr/lecteur-m3u-en-ligne — Lecteur M3U en ligne : lire une playlist IPTV
+- https://mojo4k.fr/mag-box-modeles — Box MAG Infomir : quel modèle choisir en 2026 ?
+- https://mojo4k.fr/ou-acheter-iptv — Où acheter un boîtier ou abonnement IPTV ?
+- https://mojo4k.fr/smart-iptv-vs-smarters-pro — Smart IPTV ou IPTV Smarters Pro : le comparatif
+- https://mojo4k.fr/stbemu — StbEmu : configurer un portail MAG sur Android
+- https://mojo4k.fr/telecommande-iptv — Télécommande IPTV : quelle solution choisir ?
+- https://mojo4k.fr/tivimate-samsung-lg-mac — TiviMate sur Samsung, LG, Mac et Apple : possible ?

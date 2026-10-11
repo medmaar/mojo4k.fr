@@ -1,4 +1,30 @@
 # Redirect all .html URLs to clean URLs (canonical)
 # This prevents duplicate content between /page and /page.html
 /index.html / 301
+# New guides (Oct 2026): explicit clean URLs, seo-guides
+/arnaque-iptv.html /arnaque-iptv 301
+/boitiers-iptv-marques.html /boitiers-iptv-marques 301
+/downloader-iptv.html /downloader-iptv 301
+/flix-iptv.html /flix-iptv 301
+/formuler-modeles.html /formuler-modeles 301
+/ibo-player.html /ibo-player 301
+/iplaytv-iptvx-apple-tv.html /iplaytv-iptvx-apple-tv 301
+/iptv-8k.html /iptv-8k 301
+/iptv-enigma2.html /iptv-enigma2 301
+/iptv-multi-ecrans.html /iptv-multi-ecrans 301
+/iptv-ne-fonctionne-plus.html /iptv-ne-fonctionne-plus 301
+/iptv-panasonic.html /iptv-panasonic 301
+/iptv-ps5.html /iptv-ps5 301
+/iptv-smarters-pro-ne-fonctionne-pas.html /iptv-smarters-pro-ne-fonctionne-pas 301
+/iptv-smarters-pro-pc-mac.html /iptv-smarters-pro-pc-mac 301
+/iptv-smarters-pro-smart-tv.html /iptv-smarters-pro-smart-tv 301
+/iptv-tv-non-connectee.html /iptv-tv-non-connectee 301
+/jellyfin-stremio-iptv.html /jellyfin-stremio-iptv 301
+/lecteur-m3u-en-ligne.html /lecteur-m3u-en-ligne 301
+/mag-box-modeles.html /mag-box-modeles 301
+/ou-acheter-iptv.html /ou-acheter-iptv 301
+/smart-iptv-vs-smarters-pro.html /smart-iptv-vs-smarters-pro 301
+/stbemu.html /stbemu 301
+/telecommande-iptv.html /telecommande-iptv 301
+/tivimate-samsung-lg-mac.html /tivimate-samsung-lg-mac 301
 /*.html /:splat 301
