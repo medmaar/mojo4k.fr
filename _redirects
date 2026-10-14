@@ -60,3 +60,5 @@
 /iptv-ipad /installer-iptv-ipad 301
 /iptv-smasters-pro /iptv-smarters-pro 301
 /*.html /:splat 301
+# Correct spelling of the Smarters Lite guide slug
+/iptv-smarters-lite /iptv-smasters-lite 301
