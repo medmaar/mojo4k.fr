@@ -702,6 +702,7 @@ function showTrialSuccess() {
   document.getElementById("form-wrap").style.display = "none";
   var sw = document.getElementById("success-wrap");
   sw.style.display = "block";
+  if (window.mojoCelebrate) window.mojoCelebrate("trial", document.getElementById("trial_email").value.trim());
 }
 </script>
 
@@ -934,6 +935,7 @@ document.querySelectorAll('.essai-faq-q').forEach(function(b){b.addEventListener
   }
 })();
 </script>
+<script src="/assets/celebrate.js?v=1" defer></script>
 </body>
 </html>
 

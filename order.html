@@ -723,6 +723,7 @@ function showSuccess(){
   var sw = document.getElementById("success-wrap");
   sw.style.display = "block";
   sw.style.animation = "none";
+  if (window.mojoCelebrate) window.mojoCelebrate("order", document.getElementById("email").value.trim());
   // countdown 5:00
   var total = 300;
   var el = document.getElementById("timer-text");
@@ -842,5 +843,6 @@ function showSuccess(){
 })();
 </script>
 <script src="https://iptv-trial-mojo4kfr.medmaar.workers.dev/invoice.js" defer></script>
+<script src="/assets/celebrate.js?v=1" defer></script>
 </body>
 </html>
