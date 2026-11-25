@@ -1,3 +1,64 @@
+# Excluded-market pages removed (SEO market filter, 2026-11-25)
+/iptv-arabie-saoudite /abonnement-iptv-france 301
+/iptv-arabie-saoudite/ /abonnement-iptv-france 301
+/iptv-arabie-saoudite.html /abonnement-iptv-france 301
+/iptv-emirats /abonnement-iptv-france 301
+/iptv-emirats/ /abonnement-iptv-france 301
+/iptv-emirats.html /abonnement-iptv-france 301
+/iptv-cote-divoire /abonnement-iptv-france 301
+/iptv-cote-divoire/ /abonnement-iptv-france 301
+/iptv-cote-divoire.html /abonnement-iptv-france 301
+/iptv-mali /abonnement-iptv-france 301
+/iptv-mali/ /abonnement-iptv-france 301
+/iptv-mali.html /abonnement-iptv-france 301
+/iptv-togo /abonnement-iptv-france 301
+/iptv-togo/ /abonnement-iptv-france 301
+/iptv-togo.html /abonnement-iptv-france 301
+
+# Excluded-market pages removed (SEO market filter, 2026-11-25)
+/blog-iptv-maroc /abonnement-iptv-france 301
+/blog-iptv-maroc/ /abonnement-iptv-france 301
+/blog-iptv-maroc.html /abonnement-iptv-france 301
+/iptv-maroc /abonnement-iptv-france 301
+/iptv-maroc/ /abonnement-iptv-france 301
+/iptv-maroc.html /abonnement-iptv-france 301
+/iptv-maroc-france /abonnement-iptv-france 301
+/iptv-maroc-france/ /abonnement-iptv-france 301
+/iptv-maroc-france.html /abonnement-iptv-france 301
+/iptv-algerie /abonnement-iptv-france 301
+/iptv-algerie/ /abonnement-iptv-france 301
+/iptv-algerie.html /abonnement-iptv-france 301
+/iptv-algerie-france /abonnement-iptv-france 301
+/iptv-algerie-france/ /abonnement-iptv-france 301
+/iptv-algerie-france.html /abonnement-iptv-france 301
+/iptv-tunisie /abonnement-iptv-france 301
+/iptv-tunisie/ /abonnement-iptv-france 301
+/iptv-tunisie.html /abonnement-iptv-france 301
+/iptv-mauritanie /abonnement-iptv-france 301
+/iptv-mauritanie/ /abonnement-iptv-france 301
+/iptv-mauritanie.html /abonnement-iptv-france 301
+/iptv-arabe /abonnement-iptv-france 301
+/iptv-arabe/ /abonnement-iptv-france 301
+/iptv-arabe.html /abonnement-iptv-france 301
+/iptv-qatar /abonnement-iptv-france 301
+/iptv-qatar/ /abonnement-iptv-france 301
+/iptv-qatar.html /abonnement-iptv-france 301
+/iptv-afrique /abonnement-iptv-france 301
+/iptv-afrique/ /abonnement-iptv-france 301
+/iptv-afrique.html /abonnement-iptv-france 301
+/iptv-cameroun /abonnement-iptv-france 301
+/iptv-cameroun/ /abonnement-iptv-france 301
+/iptv-cameroun.html /abonnement-iptv-france 301
+/iptv-ghana /abonnement-iptv-france 301
+/iptv-ghana/ /abonnement-iptv-france 301
+/iptv-ghana.html /abonnement-iptv-france 301
+/iptv-nigeria /abonnement-iptv-france 301
+/iptv-nigeria/ /abonnement-iptv-france 301
+/iptv-nigeria.html /abonnement-iptv-france 301
+/iptv-senegal /abonnement-iptv-france 301
+/iptv-senegal/ /abonnement-iptv-france 301
+/iptv-senegal.html /abonnement-iptv-france 301
+
 # Redirect all .html URLs to clean URLs (canonical)
 # This prevents duplicate content between /page and /page.html
 /index.html / 301
