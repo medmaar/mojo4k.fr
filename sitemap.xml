@@ -167,12 +167,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/blog-iptv-maroc</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/blog-iptv-pc-windows</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -472,12 +466,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-afrique</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-agen</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -503,18 +491,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-alencon</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-algerie-france</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-algerie</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -587,18 +563,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-apple-tv</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-arabe</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-arabie-saoudite</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -850,12 +814,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-cameroun</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-canada</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -994,12 +952,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-cote-divoire</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-courbevoie</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -1049,12 +1001,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-dunkerque</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-emirats</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1193,12 +1139,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-gap</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-ghana</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1420,26 +1360,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-mali</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-mantes-la-jolie</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-maroc-france</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-maroc</loc>
-    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1457,12 +1379,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-massy</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-mauritanie</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1561,12 +1477,6 @@
     <loc>https://mojo4k.fr/iptv-nice</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-nigeria</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -1756,12 +1666,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-qatar</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-quimper</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -1924,12 +1828,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-senegal</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-series</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -2056,12 +1954,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojo4k.fr/iptv-togo</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.fr/iptv-toulon</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -2081,12 +1973,6 @@
   </url>
   <url>
     <loc>https://mojo4k.fr/iptv-troyes</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.fr/iptv-tunisie</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
